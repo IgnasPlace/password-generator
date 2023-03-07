@@ -190,7 +190,7 @@ const App = () => {
       </div>
 
       <div className="passwordContainer mt-6 flex w-11/12 flex-col bg-secondaryDark  px-6 py-4 sm:w-[30rem]">
-        <div className="group mt-2 px-6 flex justify-between text-xl text-secondaryLight sm:text-2xl">
+        <div className="group mt-2 flex justify-between text-xl text-secondaryLight sm:text-2xl sm:px-6">
           <h2 className="passwordText text-passwordDark transition-colors duration-300 selection:bg-green selection:text-secondaryDark group-hover:text-primaryLight">
             {password}
           </h2>
