@@ -121,14 +121,18 @@ const App = () => {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-primaryDark font-mono">
-      <h1 className="mb-6 text-xl text-thirdDark">Password Generator</h1>
+      <h1 className="mb-6 text-2xl text-thirdDark">Password Generator</h1>
 
       <div className="generatorContainer mt-6 flex w-11/12 flex-col justify-between bg-secondaryDark px-6 py-4 text-secondaryLight sm:w-[30rem]">
-        <div className="flex items-center justify-between">
-          <h3>Character Length</h3>
+        <label
+          htmlFor="password-length"
+          className="flex items-center justify-between"
+        >
+          <h2>Character Length</h2>
           <span className="text-[2rem] text-green">{length}</span>
-        </div>
+        </label>
         <input
+          id="password-length"
           type="range"
           min={8}
           max={20}
@@ -190,10 +194,10 @@ const App = () => {
       </div>
 
       <div className="passwordContainer mt-6 flex w-11/12 flex-col bg-secondaryDark  px-6 py-4 sm:w-[30rem]">
-        <div className="group mt-2 flex justify-between text-xl text-secondaryLight sm:text-2xl sm:px-6">
-          <h2 className="passwordText text-passwordDark transition-colors duration-300 selection:bg-green selection:text-secondaryDark group-hover:text-primaryLight">
+        <div className="group mt-2 flex justify-between text-xl text-secondaryLight sm:px-6 sm:text-2xl">
+          <h3 className="passwordText text-thirdLight transition-colors duration-300 selection:bg-green selection:text-secondaryDark group-hover:text-primaryLight">
             {password}
-          </h2>
+          </h3>
 
           <span
             onClick={copyText}
@@ -222,6 +226,6 @@ const App = () => {
       </div>
     </div>
   );
-}
+};
 
 export default App;

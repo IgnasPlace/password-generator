@@ -10,6 +10,7 @@ module.exports = {
       passwordDark: '#54535b',
       primaryLight: "#eee",
       secondaryLight: "#ccc",
+      thirdLight: "#aaa",
       red: '#f98282',
       green: '#74F694',
       // green: '#09B1C3',
